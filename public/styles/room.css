@@ -1,0 +1,219 @@
+.content
+{
+    max-width: min(112rem, 90%);
+}
+
+a.logo
+{
+    font-family: "Poppins", sans-serif;
+    color: var(--black);
+    font-weight: 700;
+    font-size: 3.1rem;
+}
+
+a.logo span
+{
+    color: var(--green);
+}
+
+#room header
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#room header .buttons
+{
+    display: flex;
+}
+
+#room header .buttons img
+{
+    width: 2rem;
+    height: 2rem;
+}
+
+#room header .buttons .button:nth-child(1)
+{
+    padding: 1.3rem 1.6rem;
+    margin-right: 0.8rem;
+}
+
+#room header .buttons .button:nth-child(2)
+{
+    padding: 1.3rem 3.2rem;
+}
+#room header .buttons .button:nth-child(2) img
+{
+    margin-right: 1.16rem;
+}
+
+#room header .buttons .button:nth-child(1) img
+{
+    margin-left: 1.16rem;
+}
+
+#room footer
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#question-form h2
+{
+    font-family: "Poppins", sans-serif;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 4.2rem;
+    color: var(--black);
+    margin-bottom: 2.4rem;
+}
+
+#question-form form
+{
+    border: 0.2rem solid var(--gray-blue);
+    padding: 1.6rem;
+    border-radius: 0 0.8rem 0.8rem 0.8rem;
+    margin-bottom: 1.6rem;
+}
+
+#question-form form textarea
+{
+    background: transparent;
+    resize: none;
+    width: 100%;
+
+    outline: none;
+}
+
+#question-form form textarea::placeholder
+{
+    color: var(--gray-blue);
+}
+
+/*o sinal > indica que o div é só o filho direto do footer, ou seja, se tivesse outro div dentro do div filho, ele não seria afetado pelas configurações pq ele é neto do footer, não filho direto.*/
+#question-form footer > div
+{
+    display: flex;
+    align-items: center;
+    line-height: 0;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    color: var(--icons-details);
+    font-size: 1.4rem;
+}
+
+#question-form footer img
+{
+    margin-right: 0.9rem;
+}
+
+#question-form form footer button
+{
+    height: auto;
+    padding: 0.8rem 2.4rem;
+    line-height: 2.4rem;
+}
+
+.question-wrapper{
+    background: var(--light-blue);
+    border-radius: 0 0.8rem 0.8rem 0.8rem;
+    padding: 2.4rem;
+    margin-bottom: 0.8rem;
+    align-items: center;
+}
+
+.question-wrapper .question-content
+{
+    display: flex;
+    align-items: flex-start;
+}
+
+.question-wrapper .question-content p
+{
+    word-break: break-word;
+    display: flex;
+    align-items: center;
+    min-height: 5.5rem;
+}
+
+.question-wrapper .question-content .user
+{
+    background: var(--blue);
+    clip-path: circle();
+    padding: 1.4rem;
+}
+
+.question-wrapper .actions
+{
+    display: flex;
+    align-items: center;    
+    justify-content: flex-end;
+}
+
+.question-wrapper .actions > a
+{
+    display: flex;
+    align-items: center;
+    color: var(--black);
+}
+
+.question-wrapper .actions > a > img
+{
+    width: 2.4rem;
+    height: auto;
+    margin-right: 0.8rem;
+}
+
+/* a+a é o irmão do a */
+.question-wrapper .actions > a + a
+{
+    margin-left: 2.4rem;
+}
+
+.question-content .user
+{
+    margin-right: 1.6rem;
+}
+
+/* question read */
+.question-wrapper.read
+{
+    background: #eaecf2;
+}
+
+.question-wrapper.read .question-content .user
+{
+    background: var(--gray-blue);
+}
+
+.no-questions
+{
+    text-align: center;
+    padding: 5.2rem;
+}
+
+.no-questions img
+{
+    max-width: 100%;
+}
+
+.no-questions p
+{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.8rem;
+    font-weight: 600;
+    padding: 1.3rem;
+}
+
+.no-questions p + p
+{
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.9rem;
+    color: var(--gray);
+}
